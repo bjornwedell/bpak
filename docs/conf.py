@@ -82,6 +82,10 @@ language = None
 exclude_patterns = [
     '_build',
     'src/mbedtls',
+    'lib/lz4',
+    'lib/sha',
+    'lib/heatshrink',
+    'lib/uuid',
     "README.rst"
 ]
 
@@ -212,7 +216,7 @@ html_sidebars = {}
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'pbtoolsdoc'
+htmlhelp_basename = 'bpakdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
