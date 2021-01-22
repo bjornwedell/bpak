@@ -81,6 +81,7 @@ language = None
 # directories to ignore when looking for source files.
 exclude_patterns = [
     '_build',
+    'src/mbedtls',
     "README.rst"
 ]
 
