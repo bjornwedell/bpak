@@ -1,4 +1,4 @@
-:mod:`wire_format` --- Wire format
+:mod:`bpak_format` --- BPAK format
 ======================================
 
 .. module:: bpak

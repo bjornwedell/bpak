@@ -1,4 +1,6 @@
 /**
+ * \file bpak.h
+ *
  * BPAK - Bit Packer
  *
  * Copyright (C) 2019 Jonas Blixt <jonpe960@gmail.com>

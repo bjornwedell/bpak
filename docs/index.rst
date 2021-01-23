@@ -5,4 +5,4 @@ Hello
    :titlesonly:
    :hidden:
 
-   wire-format
+   bpak-format
