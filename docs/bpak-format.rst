@@ -1,8 +1,8 @@
-:mod:`bpak_format` --- BPAK format
+:mod:`bpak_format` --- Bpak format
 ======================================
 
-.. module:: bpak
-   :synopsis: Wire format, how data is serialized
+.. module:: bpak_format
+   :synopsis: Bpak format, how data is serialized
 
 Hello!
 
