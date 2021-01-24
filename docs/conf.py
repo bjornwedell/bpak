@@ -9,8 +9,6 @@ import subprocess
 
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
 
-print os.getcwd()
-
 if read_the_docs_build:
     subprocess.call('doxygen doxygen.cfg', shell=True)
 
@@ -60,7 +58,13 @@ author = u'Jonas Blixt'
 # built documents.
 #
 # The name of the branch/tag on github
-version = "asdf" # open("../VERSION.txt").read().strip()
+import re
+with open("../configure.ac") as f:
+    r = re.compile(".+\[([0-9\.]+)\]", re.DOTALL)
+    configure_ac_text = f.read()
+    m = r.match(configure_ac_text)
+    version = m.group(1)
+
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -138,7 +142,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-# html_logo = 'images/logo.jpg'
+html_logo = 'bitpacker.svg'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
